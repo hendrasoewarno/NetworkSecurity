@@ -1,4 +1,4 @@
-# Network Security
+# Pentest
 Sebelum mengalami serangan oleh Hacker, alangkah baiknya setiap Admin melakukan Pentest terhadap server/jaringan masing-masing<br>
 Adapun metodologi yang sering dilakukan Hacker dalam serangan terhadap suatu jaringan adalah:<br>
 1. Reconnaisance
