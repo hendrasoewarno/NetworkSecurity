@@ -7,6 +7,11 @@ Adapun metodologi yang sering dilakukan Hacker dalam serangan terhadap suatu jar
 4. Exploitation
 5. Post Exploitation</br>
 Sehingga kita perlu melakukan pendekatan yang sama dengan apa yang Hacker untuk mengamankan server/jaringan.
+## Beberapa istilah
+1. Vulnerability, suatu kelemahan pada sistem yang memperbolehkan penyerang untuk melakukan tindakan eksploit.
+2. Exploit, tindakan atau koding yang memungkinkan penyerang merealisasikan vulnerability dari sistem yang ditemukan.
+3. Payload, kode yang dikirim setelah eksploit berhasil direalisasikan, payload dijalankan pada sistem untuk ekploitasi lanjutan seperti Shell Code.
+4. Encoder, metode untuk mengacak payload sehingga terhindar dari deteksi oleh IDS.
 ## Reconaisance
 Upaya teknikal maupun non-teknikal untuk mendapatkan informasi awal sebanyak-banyaknya terkait dengan objek, melalui aktivitas offline maupun online. Mencoba mendapatkan informasi melalui sosial engineering (menyamar jadi customer, jasa service, menawarkan produk, dan menjalin pertemanan) seperti pertukaran kartu nama, sampai kepada mencari informasi dari tempat sampah, maupun web dan sosial media (Google, Facebook, dll) untuk mendapatkan informasi sebanyak-banyaknya terkait dengan teknologi, people dan proses (policy) yang dimiliki target seperti ip address, network topology, domain dan sub-domain name, account login seperti firstname, lastname, dan account email, OS dan Software, security policy, sistem keamanan fisik, lokasi hangout karyawan untuk mendapatkan badge name, sampai kepada tindakan Phising dan Reverse Shell.
 ### Contoh upaya Reconaisance secara online
@@ -22,11 +27,19 @@ Upaya teknikal maupun non-teknikal untuk dengan kunjungan ke objek serangan, mau
 ## Vulnerability Indentification
 Pada saat Reconaisance dan scanning berusaha mengidentifikasi domain-name, subdomain, ip-address, server, versi OS, jenis Firewall, aplikasi yang terinstalasi, service provider yang digunakan. Untuk kemungkinan adanya kelemahan pada software, kesalahan rancangan, kesalahan konfigurasi, maupun kekurangan pengendalian operasional yang menyebabkan celah tersebut terbuka.
 ## Exploitation
-Mencoba melakukan tindakan pentest dengan mengeksploitasi vulnerability yang berhasil diidentfikasi untuk mendapatkan akses seperti root level pada OS, admin level pada aplikasi, jika tidak bisa maka berusaha mendapatkan user account dan meningkatkan user account tersebut ke privilede yang lebih tinggi. Pentest juga dapat berupa tindakan DoS untuk menguji sejauh apa server dapat mendeteksi mempertahankan availbilitynya.
+Mencoba melakukan tindakan pentest dengan mengeksploitasi vulnerability yang berhasil diidentfikasi untuk mendapatkan akses seperti root level pada OS, admin level pada aplikasi, jika tidak bisa maka berusaha mendapatkan user account dan meningkatkan user account tersebut ke privilede yang lebih tinggi. Pentest juga dapat berupa tindakan DoS untuk menguji sejauh apa server dapat mendeteksi mempertahankan availabitity. Contoh eksploitasi pada Windows:
+1. Awalnya eksploit dikirim ke target untuk memungkinkan remote execution
+2. Eksploit yang dikirim adalah suatu payload kecil yang menyebabkan target melakukan koneksi balik ke server yang telah disiapkan penyerang diinternet.
+3. Setelah koneksi, payload akan mendownload payload yang lebih besar untuk eksplotasi lanjutan
+4. Suatu DLL injection dilakukan, dan menginstalasi Metapreter untuk suatu server DLL
+5. Dan server diinternet dan target berkomunikasi
 ## Post Exploitation
-Pada tindakan pentest, kegiatan lanjutan adalah membuat laporan dan dokumentasi atas temuan, membuat prove of concept terkait dengan temuan celah, dan saran bagaimana temuan tersebut dapat di mitigasi. Tetapi jika terjadi pada serangan sebenarnya, maka Hacker akan membuat upaya akses jangka panjang ke sistem, menghapus jejak forensic atas serangan, mencuri data untuk keuntungan tertentu.
+Pada tindakan pentest, kegiatan lanjutan adalah membuat laporan dan dokumentasi atas temuan, membuat prove of concept terkait dengan temuan celah, dan saran bagaimana temuan tersebut dapat di mitigasi. Tetapi jika terjadi pada serangan sebenarnya, maka Hacker akan membuat upaya akses jangka panjang ke sistem dengan menanam Shell Code seperti Meterpreter ataupun Reversed Shell, dan menginstalasi trojan, menghapus jejak forensic atas serangan, mencuri data untuk keuntungan tertentu.
+# Metasploit
+
 # Beberapa Web untuk Pentest
 1. https://www.metasploit.com
 2. http://sqlmap.org/ dan https://github.com/sqlmapproject/sqlma
-3. https://pentest-tools.com/home
+3. https://github.com/sullo/nikto
+4. https://pentest-tools.com/home
 
