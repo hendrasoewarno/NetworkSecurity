@@ -35,12 +35,15 @@ Mencoba melakukan tindakan pentest dengan mengeksploitasi vulnerability yang ber
 5. Dan server diinternet dan target berkomunikasi
 6. Eksploitasi dilanjutkan pada server/client lainnya yang berada dalam LAN dengan software seperti Armitage.
 ## Post Exploitation
-Pada tindakan pentest, kegiatan lanjutan adalah membuat laporan dan dokumentasi atas temuan, membuat prove of concept terkait dengan temuan celah, dan saran bagaimana temuan tersebut dapat di mitigasi. Tetapi jika terjadi pada serangan sebenarnya, maka Hacker akan membuat upaya akses jangka panjang ke sistem dengan menanam Shell Code seperti Meterpreter ataupun Reversed Shell, dan menginstalasi trojan, menghapus jejak forensic atas serangan, mencuri data untuk keuntungan tertentu.
+Pada tindakan pentest, kegiatan lanjutan adalah membuat laporan dan dokumentasi atas temuan, membuat prove of concept terkait dengan temuan celah, dan saran bagaimana temuan tersebut dapat di mitigasi. Tetapi jika terjadi pada serangan sebenarnya, maka Hacker akan membuat upaya akses jangka panjang ke sistem dengan menanam Shell Code seperti Meterpreter ataupun Reversed Shell, dan menginstalasi trojan, menghapus jejak forensic atas serangan, mencuri data untuk keuntungan tertentu. Untuk mempertahankan akses jangka panjang, Hacker memanfaatkan fitur seperti xinitd, initd, systemmd pada Linux, maupun registry Windows yang start service, dan launchd pada OSx untuk mengaktifkan trojan, keylogger, remote proxy, maupun BOTnet yang telah diinstalasi ke sistem. Software-software tersebut dilengkapi dengan kemampuan ROOTkit pada level user maupun kernel untuk menyembunyikan diri dari user.
 # Metasploit
 Metasplot dikembangkan oleh H.D. Moore yang berprofesi sebagai Pentester, beliau menyadari didalam melakukan profesinya, dia sering melakukan aktifitas eksploit yang sama secara berulang, dan dia mengembangan Metasploit untuk mengotomatisasi beberapa hal sebagai framework untuk berbagai payload, dan bersifat open source sehingga memungkinkan kontribusi dari berbagai pihak diinternet.
+# Netcat
+Netcat dikembangkan oleh Hobbit pada maret 1996 yang dikenal sebagai Swiss Army network tools. berjalan pada platform - Linux, Windows, OS X, SunOS, Solaris, dll secara UDP maupun TCP.
+# Cain and Abel
+Merupakan software password recovery tools yang berjalan pada platform Windows yang memiliki kemampuan packet sniffing, password hashes dengan metode bruteforce. 
 # Beberapa Web untuk Pentest
 1. https://www.metasploit.com
 2. http://sqlmap.org/ dan https://github.com/sqlmapproject/sqlma
 3. https://github.com/sullo/nikto
 4. https://pentest-tools.com/home
-
