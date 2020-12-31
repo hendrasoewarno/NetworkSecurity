@@ -1,18 +1,31 @@
 # NetworkSecurity
-Mengamankan jaringan dari serangan<br>
-Adapun metodologi yang sering dilakukan Hacker dalam pentest terhadap suatu jaringan adalah:<br>
+Sebelum mengalami serangan oleh Hacker, alangkah baiknya setiap Admin melakukan Pentest terhadap server/jaringan masing-masing<br>
+Adapun metodologi yang sering dilakukan Hacker dalam serangan terhadap suatu jaringan adalah:<br>
 1. Reconnaisance
 2. Scanning
 3. Vulnerability Identification
 4. Exploitation
 5. Post Exploitation
+Sehingga kita perlu melakukan pendekatan yang sama dengan apa yang Hacker untuk mengamankan server/jaringan.
 ## Reconaisance
-Upaya teknikal maupun non-teknikal untuk mendapatkan informasi awal sebanyak-banyaknya terkait dengan objek, melalui aktivitas offline maupun online. Mencoba mendapatkan informasi melalui sosial engineering (menyamar jadi customer, jasa service, menawarkan produk, dan menjalin pertemanan) sampai kepada mencari informasi dari tempat sampah, maupun web dan sosial media (Google, Facebook, dll) untuk mendapatkan informasi sebanyak-banyaknya terkait dengan teknologi, people dan proses (policy) yang dimiliki target.
+Upaya teknikal maupun non-teknikal untuk mendapatkan informasi awal sebanyak-banyaknya terkait dengan objek, melalui aktivitas offline maupun online. Mencoba mendapatkan informasi melalui sosial engineering (menyamar jadi customer, jasa service, menawarkan produk, dan menjalin pertemanan) seperti pertukaran kartu nama, sampai kepada mencari informasi dari tempat sampah, maupun web dan sosial media (Google, Facebook, dll) untuk mendapatkan informasi sebanyak-banyaknya terkait dengan teknologi, people dan proses (policy) yang dimiliki target seperti ip address, network topology, domain dan sub-domain name, account login seperti firstname, lastname, dan account email, OS dan Software, security policy, sistem keamanan fisik, lokasi hangout karyawan untuk mendapatkan badge name, sampai kepada tindakan Phising dan Reverse Shell.
+### Contoh upaya Reconaisance secara online
+Search pada Google dengan keyword
+```
+site: <target domain>
+link: <target domain>
+related: <nama perusahaan>
+```
+Menggunakan WHOIS dan dig untuk mendapatkan informasi terkait dengan target Domain seperti A, MX, NS, CNAME, SOA, SRV, RP, PTR, TXT, HINFO (misalkan https://pentest-tools.com/information-gathering/find-domains-owned-by-company#, https://pentest-tools.com/information-gathering/find-subdomains-of-domain#)
 ## Scanning
-Upaya teknikal maupun non-teknikal untuk dengan kunjungan ke objek serangan, maupun melakukan scanning ke jaringan/server untuk mendapatkan jumlah server, informasi port/layanan yang terbuka.
+Upaya teknikal maupun non-teknikal untuk dengan kunjungan ke objek serangan, maupun melakukan scanning ke jaringan/server untuk mendapatkan jumlah server, informasi port/layanan yang terbuka (misalkan: https://pentest-tools.com/network-vulnerability-scanning/tcp-port-scanner-online-nmap#, https://pentest-tools.com/information-gathering/website-reconnaissance-discover-web-application-technologies)
 ## Vulnerability Indentification
 Pada saat Reconaisance dan scanning berusaha mengidentifikasi domain-name, subdomain, ip-address, server, versi OS, jenis Firewall, aplikasi yang terinstalasi, service provider yang digunakan. Untuk kemungkinan adanya kelemahan pada software, kesalahan rancangan, kesalahan konfigurasi, maupun kekurangan pengendalian operasional yang menyebabkan celah tersebut terbuka.
 ## Exploitation
 Mencoba melakukan tindakan pentest dengan mengeksploitasi vulnerability yang berhasil diidentfikasi untuk mendapatkan akses seperti root level pada OS, admin level pada aplikasi, jika tidak bisa maka berusaha mendapatkan user account dan meningkatkan user account tersebut ke privilede yang lebih tinggi. Pentest juga dapat berupa tindakan DoS untuk menguji sejauh apa server dapat mendeteksi mempertahankan availbilitynya.
 ## Post Exploitation
 Pada tindakan pentest, kegiatan lanjutan adalah membuat laporan dan dokumentasi atas temuan, membuat prove of concept terkait dengan temuan celah, dan saran bagaimana temuan tersebut dapat di mitigasi. Tetapi jika terjadi pada serangan sebenarnya, maka Hacker akan membuat upaya akses jangka panjang ke sistem, menghapus jejak forensic atas serangan, mencuri data untuk keuntungan tertentu.
+# Beberapa Web untuk Pentest
+1. https://pentest-tools.com/home
+2. http://sqlmap.org/ dan https://github.com/sqlmapproject/sqlmap
+
