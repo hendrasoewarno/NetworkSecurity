@@ -33,10 +33,11 @@ Mencoba melakukan tindakan pentest dengan mengeksploitasi vulnerability yang ber
 3. Setelah koneksi, payload akan mendownload payload yang lebih besar untuk eksplotasi lanjutan
 4. Suatu DLL injection dilakukan, dan menginstalasi Metapreter untuk suatu server DLL
 5. Dan server diinternet dan target berkomunikasi
+6. Eksploitasi dilanjutkan pada server/client lainnya yang berada dalam LAN dengan software seperti Armitage.
 ## Post Exploitation
 Pada tindakan pentest, kegiatan lanjutan adalah membuat laporan dan dokumentasi atas temuan, membuat prove of concept terkait dengan temuan celah, dan saran bagaimana temuan tersebut dapat di mitigasi. Tetapi jika terjadi pada serangan sebenarnya, maka Hacker akan membuat upaya akses jangka panjang ke sistem dengan menanam Shell Code seperti Meterpreter ataupun Reversed Shell, dan menginstalasi trojan, menghapus jejak forensic atas serangan, mencuri data untuk keuntungan tertentu.
 # Metasploit
-
+Metasplot dikembangkan oleh H.D. Moore yang berprofesi sebagai Pentester, beliau menyadari didalam melakukan profesinya, dia sering melakukan aktifitas eksploit yang sama secara berulang, dan dia mengembangan Metasploit untuk mengotomatisasi beberapa hal sebagai framework untuk berbagai payload, dan bersifat open source sehingga memungkinkan kontribusi dari berbagai pihak diinternet.
 # Beberapa Web untuk Pentest
 1. https://www.metasploit.com
 2. http://sqlmap.org/ dan https://github.com/sqlmapproject/sqlma
