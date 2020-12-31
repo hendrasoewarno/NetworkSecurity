@@ -5,7 +5,7 @@ Adapun metodologi yang sering dilakukan Hacker dalam serangan terhadap suatu jar
 2. Scanning
 3. Vulnerability Identification
 4. Exploitation
-5. Post Exploitation
+5. Post Exploitation</br>
 Sehingga kita perlu melakukan pendekatan yang sama dengan apa yang Hacker untuk mengamankan server/jaringan.
 ## Reconaisance
 Upaya teknikal maupun non-teknikal untuk mendapatkan informasi awal sebanyak-banyaknya terkait dengan objek, melalui aktivitas offline maupun online. Mencoba mendapatkan informasi melalui sosial engineering (menyamar jadi customer, jasa service, menawarkan produk, dan menjalin pertemanan) seperti pertukaran kartu nama, sampai kepada mencari informasi dari tempat sampah, maupun web dan sosial media (Google, Facebook, dll) untuk mendapatkan informasi sebanyak-banyaknya terkait dengan teknologi, people dan proses (policy) yang dimiliki target seperti ip address, network topology, domain dan sub-domain name, account login seperti firstname, lastname, dan account email, OS dan Software, security policy, sistem keamanan fisik, lokasi hangout karyawan untuk mendapatkan badge name, sampai kepada tindakan Phising dan Reverse Shell.
