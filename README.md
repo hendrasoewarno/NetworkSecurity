@@ -26,6 +26,7 @@ Mencoba melakukan tindakan pentest dengan mengeksploitasi vulnerability yang ber
 ## Post Exploitation
 Pada tindakan pentest, kegiatan lanjutan adalah membuat laporan dan dokumentasi atas temuan, membuat prove of concept terkait dengan temuan celah, dan saran bagaimana temuan tersebut dapat di mitigasi. Tetapi jika terjadi pada serangan sebenarnya, maka Hacker akan membuat upaya akses jangka panjang ke sistem, menghapus jejak forensic atas serangan, mencuri data untuk keuntungan tertentu.
 # Beberapa Web untuk Pentest
-1. https://pentest-tools.com/home
-2. http://sqlmap.org/ dan https://github.com/sqlmapproject/sqlmap
+1. https://www.metasploit.com
+2. http://sqlmap.org/ dan https://github.com/sqlmapproject/sqlma
+3. https://pentest-tools.com/home
 
