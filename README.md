@@ -47,6 +47,8 @@ Ataupun mempertimbangkan 10 Resiko Keamanan Aplikasi Web https://owasp.org/www-p
 
 Kelemahan dari aplikasi dapat ditemukan dengan tiga teknik:
 1. Static Code Analysis, dengan mempelajari source code (Open Source)
+2. Reversed Engineering, dengan menggunakan decompiler seperti IDA dan JD
+3. Fuzzing, input data Fuzzy untuk crash software sebagai petunjuk adanya kelemahan yang mungkin dapat dieksploitasi secara buffer overflow
 ## Exploitation
 Mencoba melakukan tindakan pentest dengan mengeksploitasi vulnerability yang berhasil diidentfikasi untuk mendapatkan akses seperti root level pada OS, admin level pada aplikasi, jika tidak bisa maka berusaha mendapatkan user account dan meningkatkan user account tersebut ke privilede yang lebih tinggi. Pentest juga dapat berupa tindakan DoS untuk menguji sejauh apa server dapat mendeteksi mempertahankan availabitity. Contoh eksploitasi pada Windows:
 1. Awalnya eksploit dikirim ke target untuk memungkinkan remote execution
