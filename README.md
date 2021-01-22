@@ -30,6 +30,7 @@ Jika anda bertindak sebagai blue tim yang bertugas untuk mengamankan server/apli
 1. Software Development
 2. Rancangan Hardware
 3. Konsep Rancangan<br>
+
 Ataupun mempertimbangkan 10 Resiko Keamanan Aplikasi Web https://owasp.org/www-project-top-ten/ yang terdiri dari:
 1. Injection
 2. Broken Authentication
