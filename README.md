@@ -30,6 +30,16 @@ Jika anda bertindak sebagai blue tim yang bertugas untuk mengamankan server/apli
 1. Software Development
 2. Rancangan Hardware
 3. Konsep Rancangan
+Ataupun mempertimbangkan 10 Resiko Keamanan Aplikasi Web https://owasp.org/www-project-top-ten/ yang terdiri dari:
+1. Injection
+2. Broken Authentication
+3. Sensitif Data Exposure
+4. XML External Entities (XXE)
+5. Broken Access Control
+6. Cross-Site Scription (XSS)
+7. Insecure Serialization
+8. Use Components with Known Vulnerabilites
+9. Insufficient Loggings and Monitoring
 ## Exploitation
 Mencoba melakukan tindakan pentest dengan mengeksploitasi vulnerability yang berhasil diidentfikasi untuk mendapatkan akses seperti root level pada OS, admin level pada aplikasi, jika tidak bisa maka berusaha mendapatkan user account dan meningkatkan user account tersebut ke privilede yang lebih tinggi. Pentest juga dapat berupa tindakan DoS untuk menguji sejauh apa server dapat mendeteksi mempertahankan availabitity. Contoh eksploitasi pada Windows:
 1. Awalnya eksploit dikirim ke target untuk memungkinkan remote execution
