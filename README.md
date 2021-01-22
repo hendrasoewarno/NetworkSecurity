@@ -25,7 +25,11 @@ Menggunakan WHOIS dan dig untuk mendapatkan informasi terkait dengan target Doma
 ## Scanning
 Upaya teknikal maupun non-teknikal untuk dengan kunjungan ke objek serangan, maupun melakukan scanning ke jaringan/server untuk mendapatkan jumlah server, informasi port/layanan yang terbuka (misalkan: https://pentest-tools.com/network-vulnerability-scanning/tcp-port-scanner-online-nmap#, https://pentest-tools.com/information-gathering/website-reconnaissance-discover-web-application-technologies)
 ## Vulnerability Indentification
-Pada saat Reconaisance dan scanning berusaha mengidentifikasi domain-name, subdomain, ip-address, server, versi OS, jenis Firewall, aplikasi yang terinstalasi, service provider yang digunakan. Untuk kemungkinan adanya kelemahan pada software, kesalahan rancangan, kesalahan konfigurasi, maupun kekurangan pengendalian operasional yang menyebabkan celah tersebut terbuka.
+Pada saat Reconaisance dan scanning berusaha mengidentifikasi domain-name, subdomain, ip-address, server, versi OS, jenis Firewall, aplikasi yang terinstalasi, service provider yang digunakan. Untuk kemungkinan adanya kelemahan pada software, kesalahan rancangan, kesalahan konfigurasi, maupun kekurangan pengendalian operasional yang menyebabkan celah tersebut terbuka.<br>
+Jika anda bertindak sebagai blue tim yang bertugas untuk mengamankan server/aplikasi dari red tim yang berusaha menemukan vulnerability, maka anda perlu mempertimbangkan Common Weekness Enumeration (CWE) https://cwe.mitre.org/ terkait dengan kelemahan umum yang dikategorikan sebagai:
+1. Software Development
+2. Rancangan Hardware
+3. Konsep Rancangan
 ## Exploitation
 Mencoba melakukan tindakan pentest dengan mengeksploitasi vulnerability yang berhasil diidentfikasi untuk mendapatkan akses seperti root level pada OS, admin level pada aplikasi, jika tidak bisa maka berusaha mendapatkan user account dan meningkatkan user account tersebut ke privilede yang lebih tinggi. Pentest juga dapat berupa tindakan DoS untuk menguji sejauh apa server dapat mendeteksi mempertahankan availabitity. Contoh eksploitasi pada Windows:
 1. Awalnya eksploit dikirim ke target untuk memungkinkan remote execution
