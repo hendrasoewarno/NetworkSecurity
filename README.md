@@ -23,7 +23,8 @@ related: <nama perusahaan>
 ```
 Menggunakan WHOIS dan dig untuk mendapatkan informasi terkait dengan target Domain seperti A, MX, NS, CNAME, SOA, SRV, RP, PTR, TXT, HINFO (misalkan https://pentest-tools.com/information-gathering/find-domains-owned-by-company#, https://pentest-tools.com/information-gathering/find-subdomains-of-domain#)
 ## Scanning
-Upaya teknikal maupun non-teknikal untuk dengan kunjungan ke objek serangan, maupun melakukan scanning ke jaringan/server untuk mendapatkan jumlah server, informasi port/layanan yang terbuka (misalkan: https://pentest-tools.com/network-vulnerability-scanning/tcp-port-scanner-online-nmap#, https://pentest-tools.com/information-gathering/website-reconnaissance-discover-web-application-technologies)
+Upaya teknikal maupun non-teknikal untuk dengan kunjungan ke objek serangan, maupun melakukan scanning ke jaringan/server untuk mendapatkan jumlah server (Pastikan bahwa anda mendapatkan izin terlebih dahulu), informasi port/layanan yang terbuka (misalkan: https://pentest-tools.com/network-vulnerability-scanning/tcp-port-scanner-online-nmap#, https://pentest-tools.com/information-gathering/website-reconnaissance-discover-web-application-technologies)<br>
+Apakah melakukan Port Scanning Illegal? Pada tahun 1999 tercatat tuntutan hukum oleh Cherokee County kepada konsultan yang kedapatan melakukan scan kepada server mereka, dan melaporkan ke polisi, walaupun tidak ditahan, tetapi meninggalkan biaya pengacara yang besar bagi sang konsultan. Pada beberapa negara bagian Amerika memiliki peraturan yang berbeda yaitu membuat suatu ping ke server tanpa izin adalah ilegal. Pada tahun 2003 seorang pemuda Finlandia kedapatan melakukan Port Scan ke server Bank dan diperintahkan membayar tagian $12000 untuk biaya investigasi forensic yang dikeluarkan oleh pihak Bank.
 ## Vulnerability Indentification
 Pada saat Reconaisance dan scanning berusaha mengidentifikasi domain-name, subdomain, ip-address, server, versi OS, jenis Firewall, aplikasi yang terinstalasi, service provider yang digunakan. Untuk kemungkinan adanya kelemahan pada software, kesalahan rancangan, kesalahan konfigurasi, maupun kekurangan pengendalian operasional yang menyebabkan celah tersebut terbuka.<br>
 Jika anda bertindak sebagai blue tim yang bertugas untuk mengamankan server/aplikasi dari red tim yang berusaha menemukan vulnerability, maka anda perlu mempertimbangkan Common Weekness Enumeration (CWE) https://cwe.mitre.org/ terkait dengan kelemahan umum yang dikategorikan sebagai:
@@ -38,9 +39,13 @@ Ataupun mempertimbangkan 10 Resiko Keamanan Aplikasi Web https://owasp.org/www-p
 4. XML External Entities (XXE)
 5. Broken Access Control
 6. Cross-Site Scription (XSS)
+7. Sucurity Misconfiguration
 7. Insecure Serialization
 8. Use Components with Known Vulnerabilites
-9. Insufficient Loggings and Monitoring
+9. Insufficient Loggings and Monitoring<br>
+
+Kelemahan dari aplikasi dapat ditemukan dengan tiga teknik:
+1. Static Code Analysis, dengan mempelajari source code (Open Source)
 ## Exploitation
 Mencoba melakukan tindakan pentest dengan mengeksploitasi vulnerability yang berhasil diidentfikasi untuk mendapatkan akses seperti root level pada OS, admin level pada aplikasi, jika tidak bisa maka berusaha mendapatkan user account dan meningkatkan user account tersebut ke privilede yang lebih tinggi. Pentest juga dapat berupa tindakan DoS untuk menguji sejauh apa server dapat mendeteksi mempertahankan availabitity. Contoh eksploitasi pada Windows:
 1. Awalnya eksploit dikirim ke target untuk memungkinkan remote execution
