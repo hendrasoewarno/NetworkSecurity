@@ -29,7 +29,7 @@ Pada saat Reconaisance dan scanning berusaha mengidentifikasi domain-name, subdo
 Jika anda bertindak sebagai blue tim yang bertugas untuk mengamankan server/aplikasi dari red tim yang berusaha menemukan vulnerability, maka anda perlu mempertimbangkan Common Weekness Enumeration (CWE) https://cwe.mitre.org/ terkait dengan kelemahan umum yang dikategorikan sebagai:
 1. Software Development
 2. Rancangan Hardware
-3. Konsep Rancangan
+3. Konsep Rancangan<br>
 Ataupun mempertimbangkan 10 Resiko Keamanan Aplikasi Web https://owasp.org/www-project-top-ten/ yang terdiri dari:
 1. Injection
 2. Broken Authentication
